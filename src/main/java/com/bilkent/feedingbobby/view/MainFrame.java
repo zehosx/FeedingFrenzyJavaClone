@@ -18,7 +18,7 @@ public class MainFrame extends JFrame {
     private HelpPanel helpPanel;
     private ChangeSettingsPanel changeSettingsPanel;
     private AboutPanel aboutPanel;
-    private CreditsPanel creditsPanel;
+    
 
     private GamePanel gamePanel;
     private GameManager gameManager;
@@ -54,9 +54,7 @@ public class MainFrame extends JFrame {
         cardPanel.add(changeSettingsPanel, ChangeSettingsPanel.class.getName());
         aboutPanel = new AboutPanel(cardLayout, cardPanel);
         cardPanel.add(aboutPanel, AboutPanel.class.getName());
-        creditsPanel = new CreditsPanel(cardLayout, cardPanel);
-        cardPanel.add(creditsPanel, CreditsPanel.class.getName());
-
+        
         cardLayout.show(cardPanel, MainMenuPanel.class.getName());
     }
 
